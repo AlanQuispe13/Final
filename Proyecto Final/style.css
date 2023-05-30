@@ -179,12 +179,35 @@ table.schedule {
   background-color: #4e4e4e79;
 }
 
-th,
+table.schedule.th,
 td {
   border: 2px solid black;
   padding: 8px;
   text-align: center;
 }
+
+
+table.staff {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+.staff-image-cell {
+  width: 100px;
+}
+
+.staff-image-cell {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
 
 /*#endregion*/
 
