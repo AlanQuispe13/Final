@@ -21,10 +21,10 @@
   <header>
     <nav class="navbar" role="navigation">
       <div class="navbar__top">
-        <h2  class="logo-St">
+        <h2 class="logo-St">
           <a href="./index.html">
             <i><img src="./Logo.png">
-            <span>Paul MassCarney</span></i>
+              <span>Paul MassCarney</span></i>
           </a>
         </h2>
         <button type="button" class="navbar__hamburger_btn" onclick="toggleNavbarMenu()">
@@ -111,26 +111,34 @@
           <i class="fa-brands fa-instagram social_icon"></i>
         </a>
       </li>
+      <li class="app_footer__btn">
+        <a href="https://api.whatsapp.com/send?phone=0123456789">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </li>
+
+
+
     </ul>
   </footer>
 
   <footer class="desktop_footer">
     <section>
-      <h5>Conocenos</h5>
+      <h5>-Conocenos-</h5>
       <ul class="desktop_footer__menu">
         <li><a href="#">&copy; 2023 Paul MassCarney. Todos los derechos reservados.</a></li>
       </ul>
     </section>
     <section>
-      <h5>Profesionales</h5>
+      <h5>- Mas de nosotros-</h5>
       <ul class="desktop_footer__menu">
-        <li><a href="#">Lorem, ipsum.</a></li>
+        <li><a href="./Personal.html">Nuestro personal</a></li>
         <li><a href="#">Lorem, ipsum.</a></li>
         <li><a href="#">Lorem, ipsum.</a></li>
       </ul>
     </section>
     <section>
-      <h5>Seguinos</h5>
+      <h5>-Seguinos-</h5>
       <ul class="desktop_footer__menu">
         <li>
           <a target="_blank" href="https://www.facebook.com/">
@@ -143,17 +151,15 @@
         </li>
         <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram social_icon"></i></a>
         </li>
+        <li><a target="_blank" href="https://api.whatsapp.com/send?phone=0123456789"><i
+              class="fa-brands fa-whatsapp"></i></a>
+        </li>
       </ul>
     </section>
 
   </footer>
 
-  <script> const navbarMenu = document.getElementById('navbar-menu');
-    function toggleNavbarMenu() {
-      navbarMenu.classList.toggle('hidden');
-    }
-
-  </script>
+  <script src="./script2.js"></script>
 </body>
 
 </html>

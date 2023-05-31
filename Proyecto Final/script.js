@@ -20,3 +20,8 @@ function mostrarAlerta() {
     alert("El costo del envio es: " + selectedValue);
   }
 }
+
+
+window.onbeforeunload = function() {
+  return "¡Atención! Estás abandonando el sitio. ¿Estás seguro?";
+};

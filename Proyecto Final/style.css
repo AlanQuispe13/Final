@@ -1,6 +1,7 @@
 :root {
   --color-text-light: rgb(255, 255, 255);
   --color-light: #cecfc7ff;
+  --color-fourth: rgb(0, 0, 0);
   --color-third: rgb(184, 135, 135);
   --color-secondary: #23022eff;
   --color-primary: rgb(165, 31, 31);
@@ -187,25 +188,41 @@ td {
 }
 
 
-table.staff {
+.staff-table {
+  width: 100%;
+  height: 80px;
   border-collapse: collapse;
-  width: 100%;
 }
 
-th, td {
-  padding: 8px;
+.staff-table th,
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.staff-table .image-container {
+  display: flex;
+  justify-content: center;
+ 
+}
+.staff-table img {
+  display: block;
+  margin: 0 auto;
+  max-height: 18em;
+}
+
+
+.staff-table .caption {
   text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-.staff-image-cell {
-  width: 100px;
-}
-
-.staff-image-cell {
-  width: 100%;
-  max-width: 100px;
-  height: auto;
-  border-radius: 50%;
+.staff h6 {
+  text-align: center;
+  padding : 20px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 
@@ -220,7 +237,7 @@ th, td {
 
 
 .icon {
-  color: var(--color-primary);
+  color: var(--color-fourth);
 }
 
 /* Cards */
@@ -304,7 +321,7 @@ footer.desktop_footer {
 
 footer.app_footer {
   display: flex;
-  background-color: rgb(165, 31, 31);
+  background-color: rgb(184, 135, 135);
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.072);
   width: 100%;
   position: sticky;
@@ -324,8 +341,6 @@ footer .app_footer__menu {
 
 .app_footer__btn {
   font-size: 1.5rem;
-  color: var(--color-text);
-
 }
 
 div.form-control {
@@ -335,7 +350,7 @@ div.form-control {
 }
 
 button.btn {
-  background-color: var(--color-secondary);
+  background-color: var(--color-fourth);
   color: var(--color-text-light);
   padding: 0.5rem .75rem;
   border-radius: 15px;
@@ -350,6 +365,11 @@ button.btn {
   margin-top: 20px;
 }
 
+.shipping-dowload {
+  display: flex;
+  justify-content: center;
+}
+
 .select-box {
   display: inline-block;
   margin-top: 20px;
@@ -357,7 +377,14 @@ button.btn {
 }
 
 
-@media (min-width: 1024px) {
+.carne {
+  grid-template-columns: 1fr; /* Cambio a una sola columna */
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+@media (min-width: 900px) {
   .container {
     margin: 2rem 4rem;
 
@@ -445,4 +472,17 @@ button.btn {
     gap: 0 0.5rem;
   }
 
+
+  .carne {
+  
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 columnas con ancho flexible */
+    grid-gap: 1%; /* Espacio entre las cartas */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-left: 2%;
+    margin-right: 2%;
+
+  }
 }
